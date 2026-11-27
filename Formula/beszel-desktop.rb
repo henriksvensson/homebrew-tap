@@ -1,16 +1,16 @@
 class BeszelDesktop < Formula
   desc "Monitor remote servers and homelab hosts live in your Linux desktop bar via Beszel"
   homepage "https://github.com/henriksvensson/beszel-desktop"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/henriksvensson/beszel-desktop/releases/download/v0.5.0/beszel-desktop-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "04017ce083dfe8747c6f742860a9605c35913773efa1fda7793e933112728a54"
+      url "https://github.com/henriksvensson/beszel-desktop/releases/download/v0.5.1/beszel-desktop-v0.5.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e3c9df405ee5d5bc4b2298c6e073f99808ca8ea3764518926a58247a59527b15"
     elsif Hardware::CPU.intel?
-      url "https://github.com/henriksvensson/beszel-desktop/releases/download/v0.5.0/beszel-desktop-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4d0acb2abd3102379dab2b2ed8df05acdedb9e78a1711703f898be3507080ff5"
+      url "https://github.com/henriksvensson/beszel-desktop/releases/download/v0.5.1/beszel-desktop-v0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "38c4024e02bbb3bbd69f62a22981c706bd06445496e7c313907b8f9a3392a2d8"
     end
   end
 
